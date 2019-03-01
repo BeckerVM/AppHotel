@@ -1,0 +1,148 @@
+$color-black-1: #000;
+$color-black-2: #232323;
+
+$color-red-1: #af2148;
+
+$color-white-1: #fff;
+$color-white-2: #f1f1f1;
+
+.header {
+
+  &__upper {
+    height: 6rem;
+    background-color: $color-black-1;
+    padding: 0 20.7rem;
+    color: $color-white-1;
+    display: flex;
+  }
+
+  &__oficial {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  &__subtitle {
+
+  }
+
+  &__options, 
+  &__suboptions {
+    list-style: none;
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+  }
+
+  &__suboptions {
+    display: none;
+  }
+
+  &__option-item {
+    display: inline-block;
+    border-left: .1rem solid $color-white-1;    
+  }
+
+
+  &__option-link {
+    color: $color-white-1;
+    font-size: 1.6rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 3rem;
+  }
+
+  &__option-link--sub {
+    i {
+      font-size: 1.2rem;
+      margin-top: -1rem;
+      margin-left: .5rem;
+      transition: all .5s;
+    }
+  }
+
+  &__option-link--sub:hover {
+    color: $color-red-1;
+  }
+
+  &__lower {
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-top: -1.5rem;
+  }
+
+  &__reservation {
+    background-color: $color-black-2;
+    padding: 2rem;
+    position: absolute;
+    right: 6.7rem;
+    height: 8.5rem;
+    width: 14.5rem;
+    top: 0;
+    border-radius: 0 0 .7rem .7rem;
+    color: $color-white-1;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .5s;
+
+    span {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+  }
+
+  &__reservation:hover {
+    background-color: $color-red-1;
+  }
+
+  &__menu {
+    align-self: flex-start;
+    padding-top: 5rem;
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $color-white-1;
+    background-color: $color-black-1;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: .6rem;
+    transition: all .5s;
+  }
+
+  &__menu-link:hover {
+    background-color: $color-red-1;
+  }
+
+  &__menu-link:nth-child(2) {
+    background-color: $color-red-1;
+  }
+
+  &__menu-link:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
