@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BulletinComponent } from './bulletin/bulletin.component';
 import { DestinationsComponent } from './destinations/destinations.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
     BulletinComponent,
-    DestinationsComponent
+    DestinationsComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule
@@ -14,7 +16,11 @@ import { DestinationsComponent } from './destinations/destinations.component';
   ],
   exports: [
     BulletinComponent,
-    DestinationsComponent
+    DestinationsComponent,
+    SliderComponent
   ]
 })
-export class ComponentsModule { }
+export class ComponentsModule {
+  constructor() {
+  }
+}
