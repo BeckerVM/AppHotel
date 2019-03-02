@@ -1,0 +1,73 @@
+$color-black-1: #000;
+$color-black-2: #232323;
+$color-red-1: #af2148;
+$color-white-1: #fff;
+$color-white-2: #f1f1f1;
+.filter {
+    margin: 7rem 0 9rem;
+    &__container {
+        max-width: 120rem;
+        background-color: $color-white-1;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0rem;
+        align-items: center;
+    }
+    &__text {
+        width: 49.5%;
+        text-align: right;
+        span {
+            font-size: 2rem;
+            color: $color-red-1;
+        }
+    }
+    &__select {
+        width: 49.5%;
+        position: relative;
+    }
+    &__btn-select {
+        border: .1rem solid $color-red-1;
+        padding: 2rem;
+        border-radius: .5rem;
+        background-color: $color-white-1;
+        color: $color-red-1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        font-weight: 300;
+        cursor: pointer;
+        outline: none;
+    }
+    &__btn-select:active+&__list {
+        max-height: 50rem;
+        visibility: visible;
+    }
+    &__list {
+        overflow: hidden;
+        visibility: hidden;
+        transition: all .5s;
+        max-height: 0rem;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: $color-white-1;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.176) 0px 0.6rem 1.2rem;
+        border-radius: .5rem .5rem 0 0;
+        z-index: 100;
+        a {
+            text-decoration: none;
+            padding: 2rem;
+            font-size: 1.6rem;
+            transition: all .5s;
+            color: $color-red-1;
+            font-weight: 700;
+        }
+        a:hover {
+            background-color: $color-white-2;
+        }
+    }
+}
