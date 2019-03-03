@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { NgxSlidesModule } from 'ngx-slides';
+
 import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
@@ -11,7 +14,8 @@ import { NotPageFoundComponent } from './not-page-found/not-page-found.component
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    NgxSlidesModule
   ],
   exports: [
     HomeComponent,

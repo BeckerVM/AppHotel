@@ -1,22 +1,20 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ImgSliderService } from '../../services/services.index';
 
-import { SliderInterface } from './slider.interface';
 
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
-  styleUrls: ['./slider.component.scss'],
-  encapsulation: ViewEncapsulation.Native
+  styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit {
 
-  sliderArray: object[];
   transform: number;
   selectedIndex = 0;
 
+  slides: any = [];
+
   constructor(private _imgSliderService: ImgSliderService) {
-    this.sliderArray = [];
     this.selectedIndex = 0;
     this.transform = 100;
   }
@@ -25,12 +23,16 @@ export class SliderComponent implements OnInit {
 
     this._imgSliderService.getDataImages().toPromise()
       .then((data) => {
-        this.sliderArray = [data];
+        for (let element in data) {
+          this.slides.push(data[element]);
+        }
       })
 
   }
 
+
   selected(x) {
+    console.log(x);
     this.downSelected(x);
     this.selectedIndex = x;
   }

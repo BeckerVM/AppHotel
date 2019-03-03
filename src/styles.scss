@@ -1,17 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 $color-black-1: #000;
 $color-black-2: #232323;
-
 $color-red-1: #af2148;
-
 $color-white-1: #fff;
 $color-white-2: #f1f1f1;
 
@@ -24,11 +23,12 @@ html {
   @media only screen and (max-width: 56.25em) {
     font-size: 50%;
   }
+    font-size: 62.5%; //1rem = 10px
 }
 
 body {
-  box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-family: 'Noto Sans', sans-serif;
-  background-color: $color-white-2;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: $color-white-2;
 }
