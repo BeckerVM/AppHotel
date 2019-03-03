@@ -10,7 +10,7 @@
             <li class="header__option-item">
                 <a href="#" class="header__option-link"><i class="far fa-user"></i></a>
             </li>
-            <li class="header__option-item">
+            <li (click)="showOrHideSuboption()" class="header__option-item header__option-item--1" [ngClass]="{'active': isVisibleSuboption, 'show': isVibleMenuResponsive}">
                 <a href="#" class="header__option-link header__option-link--sub"><span>ES</span> <i class="fas fa-sort-down"></i></a>
                 <ul class="header__suboptions">
                     <li class="header__suboptions-item"><a class="header__suboptions-link" href="#">Español</a></li>
@@ -27,7 +27,7 @@
         <a href="#" class="header__logo">
             <img src="../../../assets/jose-antonio-hoteles-logo-header.png" alt="Hotel">
         </a>
-        <div class="header__menu">
+        <div class="header__menu" [ngClass]="{'active': isVibleMenuResponsive}">
             <a class="header__menu-link" href="">Inicio</a>
             <a class="header__menu-link" href="">Nuestras habitaciones</a>
             <a class="header__menu-link" href="">Promociones</a>
@@ -35,6 +35,8 @@
             <a class="header__menu-link" href="">Contacto</a>
         </div>
     </div>
+    <a (click)="showOrHideMenuResponsive()" href="#" class="header__icon-bar"><i class="fas fa-bars"></i></a>
+    <a (click)="showOrHideMenuResponsive()" href="#" class="header__icon-close" [ngClass]="{'show': isVibleMenuResponsive}"><i class="fas fa-times"></i></a>
 </header>
 
 <!--<app-banner></app-banner>-->
