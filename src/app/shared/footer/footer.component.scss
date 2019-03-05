@@ -66,11 +66,17 @@ footer {
 
 .logo {
   padding: 3rem;
+  margin-top: 2rem;
 }
 
 .links ul {
   display: flex;
   flex-direction: row;
+
+  @media only screen and (max-width: 75em) { 
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .links ul li {
