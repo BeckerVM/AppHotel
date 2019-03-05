@@ -1,0 +1,45 @@
+$color-black-1: #000;
+$color-black-2: #232323;
+$color-red-1: #af2148;
+$color-white-1: #fff;
+$color-white-2: #f1f1f1;
+
+.promotions {
+
+  &__inner {
+    padding: 10rem 0;
+    background-color: $color-white-1;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  &__inner-container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: inherit;
+    font-weight: 100;
+  }
+
+  &__subtitle {
+    margin: 1.5rem 0 3rem;
+    font-size:inherit;
+    font-weight: 700;
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__offers {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+}

@@ -4,12 +4,14 @@ import { BulletinComponent } from './bulletin/bulletin.component';
 import { DestinationsComponent } from './destinations/destinations.component';
 import { SliderComponent } from './slider/slider.component';
 import { NgxSlidesModule } from 'ngx-slides';
+import { OfferComponent } from './offer/offer.component';
 
 @NgModule({
   declarations: [
     BulletinComponent,
     DestinationsComponent,
-    SliderComponent
+    SliderComponent,
+    OfferComponent
   ],
   imports: [
     NgxSlidesModule,
@@ -19,7 +21,8 @@ import { NgxSlidesModule } from 'ngx-slides';
   exports: [
     BulletinComponent,
     DestinationsComponent,
-    SliderComponent
+    SliderComponent,
+    OfferComponent
   ]
 })
 export class ComponentsModule {

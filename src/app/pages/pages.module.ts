@@ -6,11 +6,13 @@ import { NgxSlidesModule } from 'ngx-slides';
 import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
+import { PromotionsComponent } from './promotions/promotions.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    NotPageFoundComponent
+    NotPageFoundComponent,
+    PromotionsComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { NotPageFoundComponent } from './not-page-found/not-page-found.component
   ],
   exports: [
     HomeComponent,
-    NotPageFoundComponent
+    NotPageFoundComponent,
+    PromotionsComponent
   ]
 })
 export class PagesModule { }
