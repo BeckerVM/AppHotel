@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BulletinComponent } from './bulletin/bulletin.component';
-import { DestinationsComponent } from './destinations/destinations.component';
 import { SliderComponent } from './slider/slider.component';
 import { NgxSlidesModule } from 'ngx-slides';
 import { OfferComponent } from './offer/offer.component';
+import { ListOptionsComponent } from './list-options/list-options.component';
 
 @NgModule({
   declarations: [
     BulletinComponent,
-    DestinationsComponent,
     SliderComponent,
-    OfferComponent
+    OfferComponent,
+    ListOptionsComponent
   ],
   imports: [
     NgxSlidesModule,
@@ -20,9 +20,9 @@ import { OfferComponent } from './offer/offer.component';
   ],
   exports: [
     BulletinComponent,
-    DestinationsComponent,
     SliderComponent,
-    OfferComponent
+    OfferComponent,
+    ListOptionsComponent
   ]
 })
 export class ComponentsModule {

@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
 import { PromotionsComponent } from './promotions/promotions.component';
+import { OurHotelsComponent } from './our-hotels/our-hotels.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     NotPageFoundComponent,
-    PromotionsComponent
+    PromotionsComponent,
+    OurHotelsComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { PromotionsComponent } from './promotions/promotions.component';
   exports: [
     HomeComponent,
     NotPageFoundComponent,
-    PromotionsComponent
+    PromotionsComponent,
+    OurHotelsComponent
   ]
 })
 export class PagesModule { }

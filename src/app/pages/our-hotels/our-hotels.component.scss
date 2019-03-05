@@ -1,0 +1,22 @@
+$color-black-1: #000;
+$color-black-2: #232323;
+$color-red-1: #af2148;
+$color-white-1: #fff;
+$color-white-2: #f1f1f1;
+.hotel {
+    padding: 10rem 7.5rem;
+    background-color: $color-white-1;
+    text-align: center;
+    &__title {
+        font-size: 3.5rem;
+        font-weight: 300;
+    }
+    &__subtitle {
+        margin: 1.5rem 0 3rem;
+        font-size: 3.5rem;
+    }
+    &__paragraph {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
