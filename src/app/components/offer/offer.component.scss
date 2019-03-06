@@ -10,8 +10,19 @@ $color-white-2: #f1f1f1;
   position: relative;
   height: 52.5rem;
 
+  @media only screen and (max-width: 56.25em) {
+    flex-direction: column;
+    margin-bottom: 7.1rem;
+    height: auto;
+  }
+
   &__container-img {
     width: 60%;
+
+    @media only screen and (max-width: 56.25em) {
+      height: 50%;
+      width: 100%;
+    }
   }
 
   &__image {
@@ -28,6 +39,19 @@ $color-white-2: #f1f1f1;
     left: 50%;
     box-shadow: 0 0 1.5rem rgba(0,0,0,.1);
     margin: 3.7rem 0;
+
+    @media only screen and (max-width: 56.25em) {
+      position: relative;
+      width: 100%;
+      left: 0;
+      top: 0;
+      margin: 0;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      text-align: center;
+    }
   }
 
   &__title {
@@ -80,6 +104,10 @@ $color-white-2: #f1f1f1;
     cursor: pointer;
     position: relative;
     outline: none;
+
+    @media only screen and (max-width: 37.5em) {
+      margin: 0 auto;
+    }
   }
 
   &__btn::after {

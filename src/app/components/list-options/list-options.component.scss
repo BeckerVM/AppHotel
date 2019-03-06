@@ -11,8 +11,12 @@ $color-white-2: #f1f1f1;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0rem;
+        padding: 2rem;
         align-items: center;
+        
+        @media only screen and (max-width: 37.5em) {
+          justify-content: center;
+        }
     }
     &__text {
         width: 49.5%;
@@ -25,6 +29,9 @@ $color-white-2: #f1f1f1;
     &__select {
         width: 49.5%;
         position: relative;
+        @media only screen and (max-width: 37.5em) {
+          width: 80%;
+        }
     }
     &__btn-select {
         border: .1rem solid $color-red-1;
