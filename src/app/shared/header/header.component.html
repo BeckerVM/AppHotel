@@ -28,11 +28,11 @@
             <img src="../../../assets/jose-antonio-hoteles-logo-header.png" alt="Hotel">
         </a>
         <div class="header__menu" [ngClass]="{'active': isVibleMenuResponsive}">
-            <a class="header__menu-link" [routerLink]="['/home']" routerLinkActive="active">Inicio</a>
-            <a class="header__menu-link" [routerLink]="['/our-hotels']" routerLinkActive="active">Nuestras habitaciones</a>
-            <a class="header__menu-link" [routerLink]="['/promotions']" routerLinkActive="active">Promociones</a>
+            <a class="header__menu-link" [routerLink]="['/home']" routerLinkActive="active-links">Inicio</a>
+            <a class="header__menu-link" [routerLink]="['/our-hotels']" routerLinkActive="active-links">Nuestras habitaciones</a>
+            <a class="header__menu-link" [routerLink]="['/promotions']" routerLinkActive="active-links">Promociones</a>
             <a [routerLink]="['/routePath']" routerLinkActive="active" class="header__menu-link">Eventos</a>
-            <a class="header__menu-link" [routerLink]="['/routePath']" routerLinkActive="active">Contacto</a>
+            <a class="header__menu-link" [routerLink]="['/routePath']" routerLinkActive="active-links">Contacto</a>
         </div>
     </div>
     <a (click)="showOrHideMenuResponsive()" href="#" class="header__icon-bar"><i class="fas fa-bars"></i></a>

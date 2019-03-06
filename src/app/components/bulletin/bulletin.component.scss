@@ -1,8 +1,13 @@
 $color-red-1: #af2148;
 $color-white-1: #fff;
+
 .hotels-information-container {
     max-width: 120rem;
     margin: 0 auto;
+
+    @media only screen and (max-width: 56.25em) {
+      padding: 0 2rem;
+    }
 }
 
 .hotels-information {
@@ -10,21 +15,41 @@ $color-white-1: #fff;
     background-color: $color-white-1;
     display: flex;
     flex-direction: row;
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      margin-bottom: 5rem;
+    }
+
     .hotel-img {
         width: 50%;
         img {
             width: 100%;
             height: 100%;
         }
+
+        @media only screen and (max-width: 37.5em) {
+          width: 100%;
+        }
     }
     .hotel-information {
         padding: 2rem;
         width: 50%;
+
+        @media only screen and (max-width: 37.5em) {
+          width: 100%;
+        }
+
         .calification {
             height: auto;
             width: 100%;
             display: flex;
             flex-direction: row-reverse;
+
+            @media only screen and (max-width: 37.5em) {
+              text-align: center;
+            }
+
             div {
                 text-align: center;
                 h5 {
