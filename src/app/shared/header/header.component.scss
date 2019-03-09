@@ -82,7 +82,6 @@ $color-white-2: #f1f1f1;
         font-weight: 300;
         font-size: 1.4rem;
     }
-    &__subtitle {}
     &__options,
     &__suboptions {
         list-style: none;
@@ -169,7 +168,6 @@ $color-white-2: #f1f1f1;
             max-height: 100vh;
         }
     }
-    &__suboptions-item {}
     &__suboptions-link {
         font-size: 1.6rem;
         color: $color-black-2;

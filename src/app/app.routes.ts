@@ -1,15 +1,25 @@
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { PagesComponent } from './pages/pages.component';
 import { NotPageFoundComponent } from './pages/not-page-found/not-page-found.component';
-import { PromotionsComponent } from './pages/promotions/promotions.component'
-import { OurHotelsComponent } from './pages/our-hotels/our-hotels.component';
+import { AuthPagesComponent } from './auth-pages/auth-pages.component';
 
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'promotions', component: PromotionsComponent },
-  { path: 'our-hotels', component: OurHotelsComponent },
-  { path: '**', component: NotPageFoundComponent },
+  {
+    path: 'pages',
+    component: PagesComponent,
+    loadChildren: './pages/pages.module#PagesModule'
+  },
+  {
+    path: 'auth-pages',
+    component: AuthPagesComponent,
+    loadChildren: './auth-pages/auth-pages.module#AuthPagesModule'
+  },
+
+  // { path: 'home', component: HomeComponent },
+  // { path: 'promotions', component: PromotionsComponent },
+  // { path: 'our-hotels', component: OurHotelsComponent },
+  { path: '**', component: NotPageFoundComponent }
 
 ];
 

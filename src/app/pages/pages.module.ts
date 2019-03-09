@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PAGES_ROUTES } from './pages.routes';
 
 import { NgxSlidesModule } from 'ngx-slides';
 
@@ -8,24 +9,21 @@ import { ComponentsModule } from '../components/components.module';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { OurHotelsComponent } from './our-hotels/our-hotels.component';
+import { PagesComponent } from './pages.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    NotPageFoundComponent,
     PromotionsComponent,
     OurHotelsComponent
   ],
   imports: [
     CommonModule,
     ComponentsModule,
-    NgxSlidesModule
+    NgxSlidesModule,
+    PAGES_ROUTES
   ],
   exports: [
-    HomeComponent,
-    NotPageFoundComponent,
-    PromotionsComponent,
-    OurHotelsComponent
   ]
 })
 export class PagesModule { }
