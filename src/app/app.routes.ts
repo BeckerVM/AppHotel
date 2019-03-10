@@ -15,10 +15,6 @@ const appRoutes: Routes = [
     component: AuthPagesComponent,
     loadChildren: './auth-pages/auth-pages.module#AuthPagesModule'
   },
-
-  // { path: 'home', component: HomeComponent },
-  // { path: 'promotions', component: PromotionsComponent },
-  // { path: 'our-hotels', component: OurHotelsComponent },
   { path: '**', component: NotPageFoundComponent }
 
 ];

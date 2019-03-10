@@ -28,9 +28,9 @@
             <img src="../../../assets/jose-antonio-hoteles-logo-header.png" alt="Hotel">
         </a>
         <div class="header__menu" [ngClass]="{'active': isVibleMenuResponsive}">
-            <a class="header__menu-link" [routerLink]="['/home']" routerLinkActive="active-links">Inicio</a>
-            <a class="header__menu-link" [routerLink]="['/our-hotels']" routerLinkActive="active-links">Nuestras habitaciones</a>
-            <a class="header__menu-link" [routerLink]="['/promotions']" routerLinkActive="active-links">Promociones</a>
+            <a class="header__menu-link" [routerLink]="['home']" routerLinkActive="active-links">Inicio</a>
+            <a class="header__menu-link" [routerLink]="['our-hotels']" routerLinkActive="active-links">Nuestras habitaciones</a>
+            <a class="header__menu-link" [routerLink]="['promotions']" routerLinkActive="active-links">Promociones</a>
             <a [routerLink]="['/routePath']" routerLinkActive="active" class="header__menu-link">Eventos</a>
             <a class="header__menu-link" [routerLink]="['/routePath']" routerLinkActive="active-links">Contacto</a>
         </div>
