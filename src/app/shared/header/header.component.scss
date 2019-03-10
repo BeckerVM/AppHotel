@@ -236,7 +236,7 @@ $color-white-2: #f1f1f1;
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        transition: all .5s;
+        transition: color .5s;
         animation: fadeOut 1.5s ease-out;
         @media only screen and (max-width: 75em) {
             animation: none;
@@ -294,7 +294,8 @@ $color-white-2: #f1f1f1;
         font-size: 1.6rem;
         font-weight: 700;
         border-radius: .6rem;
-        transition: all .5s;
+        transition: color .5s;
+
         @media only screen and (max-width: 75em) {
             border-radius: 0;
             font-weight: 300;
@@ -317,7 +318,7 @@ $color-white-2: #f1f1f1;
     }
 }
 
-.active {
+.active-links {
     background-color: $color-red-1;
     @media only screen and (max-width: 75em) {
         background-color: transparent
