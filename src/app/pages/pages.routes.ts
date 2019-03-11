@@ -6,9 +6,9 @@ import { OurHotelsComponent } from './our-hotels/our-hotels.component';
 
 const pagesRoutes: Routes = [
     {
-        path: 'home',
-        component: HomeComponent,
-        data: { titulo: 'Home' }
+      path: 'home',
+      component: HomeComponent,
+      data: { titulo: 'Home' }
     },
     { path: 'promotions', component: PromotionsComponent },
     { path: 'our-hotels', component: OurHotelsComponent },
