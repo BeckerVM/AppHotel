@@ -4,10 +4,16 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
-  declarations: [SidebarComponent, MenuComponent],
+  declarations: [
+    SidebarComponent,
+    MenuComponent
+  ],
   imports: [
     CommonModule
   ],
-  exports: [SidebarComponent, MenuComponent]
+  exports: [
+    SidebarComponent,
+    MenuComponent
+  ]
 })
 export class AuthComponentsModule { }

@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PagesComponent } from './pages/pages.component';
 import { NotPageFoundComponent } from './pages/not-page-found/not-page-found.component';
 import { AuthPagesComponent } from './auth-pages/auth-pages.component';
+import { AuthComponentsModule } from './auth-components/auth-components.module';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { AuthPagesComponent } from './auth-pages/auth-pages.component';
     ServicesModule,
     SharedModule,
     ComponentsModule,
-
+    AuthComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
