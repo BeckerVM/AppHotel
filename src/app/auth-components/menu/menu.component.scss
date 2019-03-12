@@ -15,6 +15,10 @@ $color-black-1: #353c4e;
   align-items: center;
   justify-content: space-between;
 
+  @media only screen and (max-width: 56.25em) {
+    margin-left: 0;
+  }
+
   &__box-search {
   }
 

@@ -8,11 +8,17 @@ $color-gray-2: #dcdcdc;
   background-color: $color-back-1;
   
   width: 24rem;
+  max-height: 100vh;
   height: 100vh;
-
   position: fixed;
   top: 0;
   left: 0;
+
+  @media only screen and (max-width: 56.25em) {
+    position: relative;
+    width: 100%;
+    height: 5.6rem;
+  }
   
   &__header {
     padding: 1.5rem 1.8rem;
@@ -42,7 +48,15 @@ $color-gray-2: #dcdcdc;
   }
 
   &__content {
-
+    z-index: 100;
+    @media only screen and (max-width: 56.25em) {
+      position: fixed;
+      top: 11.2rem;
+      left: 0;
+      width: 24rem;
+      background-color: $color-back-1;
+      height: 100vh;
+    }
   }
 
   &__title {
@@ -109,10 +123,47 @@ $color-gray-2: #dcdcdc;
   &__sublink:hover {
     color: $color-orange-1;
   }
+
+  &__back {
+    position: fixed;
+    top: 11.2rem;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    transition: opacity .3s;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    display: none;
+
+    @media only screen and (max-width: 56.25em) {
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 }
 
 .active {
   color: $color-white-1;
   font-weight: 700;
   border-left: .3rem solid $color-orange-1;
+}
+
+.sidebar.close {
+  height: 5.6rem;
+  overflow: hidden;
+}
+
+.sidebar.close .sidebar__content {
+  visibility: hidden;
+}
+
+.sidebar.close .sidebar__header {
+  box-shadow: none;
+}
+
+.sidebar .sidebar__back.close {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
 }
