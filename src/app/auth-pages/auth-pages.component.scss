@@ -5,10 +5,23 @@ $color-background-1: #f6f7fb;
     background-color: $color-background-1;
     width: 100%;
     height: 100vh;
+
     &__menu {
-        display: flex;
+      display: flex;
+      z-index: 100;
+      position: relative;
+
+      @media only screen and (max-width: 56.25em) {
+        flex-direction: column;
+      }
     }
+
     &__main {
         margin-left: 24rem;
+        padding: 2.8rem;
     }
+}
+
+.dashboard.not-margin .dashboard__main {
+  margin-left: 0;
 }

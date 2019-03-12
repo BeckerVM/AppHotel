@@ -1,10 +1,14 @@
-<div class="sidebar">
+<div class="sidebar" [ngClass]="{'close': !isClosedSidebar}">
   <div class="sidebar__header">
     <a href="#" class="sidebar__logo"><span>Ad</span>mi<span>ni</span>ty</a>
-    <a href="#" class="sidebar__icon">
+    <span *ngIf="isClosedSidebar; else elseBlock" class="sidebar__icon" (click)="showOrHideSidebar()">
       <!----><i class="fas fa-toggle-on"></i>
-      <!--<i class="fas fa-toggle-off"></i>-->
-    </a>
+    </span>
+    <ng-template #elseBlock>
+      <span class="sidebar__icon" (click)="showOrHideSidebar()">
+        <!----><i class="fas fa-toggle-off"></i>
+      </span>
+    </ng-template>
   </div>
   <div class="sidebar__content">
     <div class="sidebar__title">
@@ -39,4 +43,5 @@
       </li>
     </ul>
   </div>
+  <div class="sidebar__back" [ngClass]="{'close': isClosedSidebar}" (click)="showOrHideSidebar()"></div>
 </div>

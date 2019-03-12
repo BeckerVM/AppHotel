@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthPagesComponent implements OnInit {
 
-  constructor() { }
+  isClosedSidebar: boolean
+
+  constructor() { 
+    this.isClosedSidebar = true
+  }
 
   ngOnInit() {
+  }
+
+  showOrHideSidebar(isClosed: boolean) {
+    this.isClosedSidebar = isClosed
+    console.log(this.isClosedSidebar)
   }
 
 }
